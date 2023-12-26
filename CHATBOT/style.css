@@ -1,0 +1,83 @@
+/* Basic styling for the chat container */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.chat-container {
+  background-image: url('background-image.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-background {
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust transparency */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chatbot-image {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%; /* For a circular image */
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+/* Chat bubble styling */
+.chat-bubble {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.user-bubble {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+}
+
+.bot-bubble {
+  align-self: flex-start;
+  background-color: #eee;
+  color: #333;
+}
+
+/* Audio control button styling */
+.audio-controls button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.audio-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
